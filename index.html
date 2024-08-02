@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="head">
+        <h2>cruds</h2>
+        <p>product management system</p>
+    </div>  
+
+
+    <div class="inputs">
+
+         <input type="text" id="title" placeholder="title">
+     <div class="price">
+
+         <input onkeyup="calcule()" type="number" id="price" placeholder="price">
+         <input onkeyup="calcule()" type="number" id="taxes" placeholder="taxes">
+         <input onkeyup="calcule()" type="number" id="ads" placeholder="ads">
+         <input onkeyup="calcule()" type="number" id="discount" placeholder="discount">
+         <small  id="total">2555</small>
+
+     </div>
+     <input type="number" id="count" placeholder="count">
+     <input type="text" id="category" placeholder="category">
+     <button id="create">create</button>
+
+    </div>
+    <div class="outps">
+        <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+        <div class="btnsr">
+            <button onclick="getsearchmode(this.id)" id="searchtitle">search by title</button>
+            <button onclick="getsearchmode(this.id)" id="searchcategory">search by category</button>
+        </div>
+        <div id="delleteall">
+         
+
+
+
+        </div>
+            <table >
+                <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+                <tbody id="tbody">
+             
+                     
+                </tbody>
+            </table>
+
+
+
+
+
+
+    </div>
+
+
+
+
+</div>
+    <script src="jv.js"></script>
+</body>
+</html>
